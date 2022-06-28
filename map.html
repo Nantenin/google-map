@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Maps Api</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <link rel="stylesheet" href="./css/style.css">
+
+
+</head>
+
+<body>
+    <h1>Google Maps</h1>
+    <div id="floating-panel">
+        <strong>Start: </strong>
+        <select id="start" onchange="calcRoute();">
+          <option value="sicap liberté 6, sn">Sicap Liberté 6</option>
+          <option value="ouakam, sn">Ouakam</option>
+          <option value="medina, sn">Medina</option>
+          <option value="colobane, sn">Colobane</option>
+          <option value="sacré coeur 3, sn">Sacré coeur 3</option>
+          <option value="fass, sn">Fass</option>
+          <option value="mermoz, sn">Mermoz</option>
+          <option value="fann, sn">Fann</option>
+          <option value="sicap liberté 5, sn">Sicap Liberté 5</option>
+          <option value="sicap liberté 4, sn">Scicap Liberté 4</option>
+          <option value="sicap liberté 3, sn">Scicap Liberté 3</option>
+          <option value="sicap liberté 2, sn">Scicap Liberté 2</option>
+        </select>
+        <strong>End: </strong>
+        <select id="end" onchange="calcRoute();">
+          <option value="sicap liberté 6, sn">Sicap Liberté 6</option>
+          <option value="ouakam, sn">Ouakam</option>
+          <option value="medina, sn">Medina</option>
+          <option value="colobane, sn">Colobane</option>
+          <option value="sacré coeur 3, sn">Sacré coeur 3</option>
+          <option value="fass, sn">Fass</option>
+          <option value="mermoz, sn">Mermoz</option>
+          <option value="fann, sn">Fann</option>
+          <option value="sicap liberté 5, sn">Sicap Liberté 5</option>
+          <option value="sicap liberté 4, sn">Scicap Liberté 4</option>
+          <option value="sicap liberté 3, sn">Scicap Liberté 3</option>
+          <option value="sicap liberté 2, sn">Scicap Liberté 2</option>
+        </select>
+        </div>
+<div id="map"></div>
+
+<script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDdkGRqTxbRm6AW-IMS3yhBoCZpmOCmHNU&callback=initMap&v=weekly"
+    defer
+  ></script>
+
+<script src="./js/map.js"></script>
+</body>
+</html>
